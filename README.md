@@ -9,13 +9,20 @@ This builds two containers: `18f/terraform` and `18f/kitchen-terraform`
 Use as
 
 ```
-docker run -it 18f/terraform
+docker run -it -v ${PWD}:/src 18f/terraform
 ```
 
 to get just terraform, and 
 
 ```
-docker run -it 18f/kitchen-terraform
+docker run -it -v ${PWD}:/src 18f/kitchen
 ```
 
-for `kitchen` as the enterypoint.
+or 
+
+```
+docker run -it -v ${PWD}:/src 18f/kitchen converge
+```
+
+as a first step.
+

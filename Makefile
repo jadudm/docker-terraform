@@ -6,5 +6,5 @@ terraform:
 	docker build -t 18f/terraform terraform/
 
 kitchen:
-	docker build -t 18f/kitchen-terraform kitchen/
+	docker build -t 18f/kitchen kitchen/
 

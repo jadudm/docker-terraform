@@ -11,5 +11,6 @@ RUN apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(ls
 RUN apt-get update 
 RUN apt-get install -y terraform
 
+WORKDIR /src 
 
 ENTRYPOINT ["terraform"]

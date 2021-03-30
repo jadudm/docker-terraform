@@ -4,7 +4,7 @@ RUN apt update && \
     apt install -y \
         rbenv  
 
-WORKDIR /kitchen-config
+WORKDIR /src
 ADD Gemfile . 
 RUN gem install bundler && \
     bundle install
